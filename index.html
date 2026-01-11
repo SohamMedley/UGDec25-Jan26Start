@@ -81,7 +81,7 @@
             padding: 6px;
             border-radius: 12px;
             transition: opacity 0.3s ease;
-            object-fit: contain; /* Ensures QR doesn't stretch */
+            object-fit: contain;
         }
 
         .qr-dl-btn {
@@ -179,7 +179,8 @@
                 </div>
                 <span style="font-weight: 800;">₹325</span>
             </div>
-<div class="work-item">
+
+            <div class="work-item">
                 <div style="display: flex; align-items: center;">
                     <img src="Images/thumbnail2.jpg" alt="thumbnail 2" class="work-thumb">
                     <div>
@@ -206,7 +207,7 @@
 
     <script>
         function downloadQR() {
-            // Ensure this path matches EXACTLY: 'Images' (Capital I) and 'pay.png' (lowercase)
+            // Path must match your GitHub folder exactly: 'Images/pay.png'
             const qrImageUrl = 'Images/pay.png';
             
             const link = document.createElement('a');
@@ -219,5 +220,4 @@
     </script>
 
 </body>
-
 </html>
